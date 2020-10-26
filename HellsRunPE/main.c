@@ -1,9 +1,8 @@
 #pragma once
 #include <Windows.h>
-//#include <winternl.h>
 #include <stdio.h>
 #include "structs.h"
-#pragma comment(lib,"ntdll.lib")
+
 #define OBF(str) (djb2(str))
 
 /*--------------------------------------------------------------------
