@@ -401,7 +401,7 @@ INT wmain(int argc, WCHAR* argv[]) {
 		return;
 	}
 
-	NtClose(hFile);
+	CloseHandle(hFile);
 	return MapNewExecutableRegionInProcess(&Table, pi.hProcess, pi.hThread, image);
 }
 
